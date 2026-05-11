@@ -1,0 +1,70 @@
+{
+  "hosts": [
+    {
+      "id": "prod-web-01",
+      "name": "prod-web-01",
+      "ip": "10.0.1.10",
+      "status": "online",
+      "cpu": 42,
+      "memory": 58,
+      "disk": 70,
+      "uptime": 45,
+      "lastSeen": "2026-05-11T14:35:22Z"
+    },
+    {
+      "id": "prod-web-02",
+      "name": "prod-web-02",
+      "ip": "10.0.1.11",
+      "status": "online",
+      "cpu": 38,
+      "memory": 61,
+      "disk": 68,
+      "uptime": 45,
+      "lastSeen": "2026-05-11T14:35:15Z"
+    },
+    {
+      "id": "prod-db-01",
+      "name": "prod-db-01",
+      "ip": "10.0.1.20",
+      "status": "online",
+      "cpu": 55,
+      "memory": 78,
+      "disk": 82,
+      "uptime": 45,
+      "lastSeen": "2026-05-11T14:35:18Z"
+    },
+    {
+      "id": "prod-cache-01",
+      "name": "prod-cache-01",
+      "ip": "10.0.1.30",
+      "status": "online",
+      "cpu": 28,
+      "memory": 45,
+      "disk": 50,
+      "uptime": 45,
+      "lastSeen": "2026-05-11T14:35:20Z"
+    },
+    {
+      "id": "prod-api-01",
+      "name": "prod-api-01",
+      "ip": "10.0.1.40",
+      "status": "warning",
+      "cpu": 72,
+      "memory": 88,
+      "disk": 75,
+      "uptime": 45,
+      "lastSeen": "2026-05-11T14:34:50Z"
+    },
+    {
+      "id": "prod-monitor",
+      "name": "prod-monitor",
+      "ip": "10.0.1.50",
+      "status": "online",
+      "cpu": 18,
+      "memory": 32,
+      "disk": 92,
+      "uptime": 180,
+      "lastSeen": "2026-05-11T14:35:19Z"
+    }
+  ]
+}

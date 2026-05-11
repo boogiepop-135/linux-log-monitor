@@ -1,0 +1,58 @@
+{
+  "services": [
+    {
+      "id": "nginx",
+      "name": "nginx",
+      "status": "running",
+      "hosts": ["prod-web-01", "prod-web-02"],
+      "restarts": 3,
+      "lastRestart": "2026-05-10T08:22:00Z",
+      "connections": 1243
+    },
+    {
+      "id": "postgresql",
+      "name": "postgresql",
+      "status": "running",
+      "hosts": ["prod-db-01"],
+      "restarts": 0,
+      "lastRestart": "2026-05-01T00:15:00Z",
+      "connections": 42
+    },
+    {
+      "id": "redis",
+      "name": "redis",
+      "status": "running",
+      "hosts": ["prod-cache-01"],
+      "restarts": 1,
+      "lastRestart": "2026-05-08T15:30:00Z",
+      "connections": 128
+    },
+    {
+      "id": "docker",
+      "name": "docker",
+      "status": "running",
+      "hosts": ["prod-web-01", "prod-web-02", "prod-api-01"],
+      "restarts": 0,
+      "lastRestart": "2026-04-28T05:10:00Z",
+      "connections": 0
+    },
+    {
+      "id": "rabbitmq",
+      "name": "rabbitmq",
+      "status": "warning",
+      "hosts": ["prod-queue-01"],
+      "restarts": 2,
+      "lastRestart": "2026-05-09T12:45:00Z",
+      "connections": 54
+    },
+    {
+      "id": "systemd",
+      "name": "systemd",
+      "status": "running",
+      "hosts": ["prod-web-01", "prod-web-02", "prod-db-01", "prod-cache-01", "prod-api-01", "prod-monitor"],
+      "restarts": 0,
+      "lastRestart": null,
+      "connections": 0
+    }
+  ]
+}

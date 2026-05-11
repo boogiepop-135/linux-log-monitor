@@ -1,0 +1,94 @@
+{
+  "logs": [
+    {
+      "id": 1,
+      "timestamp": "2026-05-11T14:35:22Z",
+      "level": "info",
+      "host": "prod-web-01",
+      "service": "nginx",
+      "message": "Worker process started (PID: 4521)",
+      "source": "kernel"
+    },
+    {
+      "id": 2,
+      "timestamp": "2026-05-11T14:34:58Z",
+      "level": "info",
+      "host": "prod-db-01",
+      "service": "postgresql",
+      "message": "Database checkpoint completed",
+      "source": "database"
+    },
+    {
+      "id": 3,
+      "timestamp": "2026-05-11T14:33:45Z",
+      "level": "warning",
+      "host": "prod-web-02",
+      "service": "docker",
+      "message": "Memory usage above 85% threshold",
+      "source": "container"
+    },
+    {
+      "id": 4,
+      "timestamp": "2026-05-11T14:32:12Z",
+      "level": "info",
+      "host": "prod-cache-01",
+      "service": "redis",
+      "message": "Scheduled RDB save starting",
+      "source": "cache"
+    },
+    {
+      "id": 5,
+      "timestamp": "2026-05-11T14:31:08Z",
+      "level": "error",
+      "host": "prod-api-01",
+      "service": "app",
+      "message": "Failed to connect to database: Connection timeout after 30s",
+      "source": "application"
+    },
+    {
+      "id": 6,
+      "timestamp": "2026-05-11T14:29:54Z",
+      "level": "critical",
+      "host": "prod-web-01",
+      "service": "systemd",
+      "message": "Service crashed unexpectedly, restarting...",
+      "source": "system"
+    },
+    {
+      "id": 7,
+      "timestamp": "2026-05-11T14:28:33Z",
+      "level": "warning",
+      "host": "prod-monitor",
+      "service": "rsyslog",
+      "message": "Disk space low on /var/log (92% used)",
+      "source": "system"
+    },
+    {
+      "id": 8,
+      "timestamp": "2026-05-11T14:26:19Z",
+      "level": "info",
+      "host": "prod-db-01",
+      "service": "postgresql",
+      "message": "Autovacuum launched for table public.events",
+      "source": "database"
+    },
+    {
+      "id": 9,
+      "timestamp": "2026-05-11T14:24:07Z",
+      "level": "error",
+      "host": "prod-queue-01",
+      "service": "rabbitmq",
+      "message": "Connection refused from 10.0.1.45 (rate limited)",
+      "source": "queue"
+    },
+    {
+      "id": 10,
+      "timestamp": "2026-05-11T14:22:51Z",
+      "level": "info",
+      "host": "prod-web-02",
+      "service": "nginx",
+      "message": "SSL certificate will expire in 7 days",
+      "source": "security"
+    }
+  ]
+}

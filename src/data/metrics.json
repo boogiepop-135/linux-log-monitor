@@ -1,0 +1,76 @@
+{
+  "cpu": {
+    "usage": 45.2,
+    "cores": 8,
+    "processes": 342,
+    "loadAverage": [2.1, 2.3, 1.8],
+    "history": [
+      { "time": "00:00", "value": 28 },
+      { "time": "04:00", "value": 32 },
+      { "time": "08:00", "value": 45 },
+      { "time": "12:00", "value": 52 },
+      { "time": "16:00", "value": 48 },
+      { "time": "20:00", "value": 42 },
+      { "time": "23:59", "value": 45 }
+    ]
+  },
+  "memory": {
+    "usage": 62.5,
+    "total": 16,
+    "available": 6,
+    "cached": 2.3,
+    "swap": 18,
+    "history": [
+      { "time": "00:00", "value": 45 },
+      { "time": "04:00", "value": 50 },
+      { "time": "08:00", "value": 58 },
+      { "time": "12:00", "value": 65 },
+      { "time": "16:00", "value": 62 },
+      { "time": "20:00", "value": 60 },
+      { "time": "23:59", "value": 62 }
+    ]
+  },
+  "disk": [
+    {
+      "mount": "/",
+      "device": "/dev/sda1",
+      "usage": 72.3,
+      "total": 500,
+      "used": 361,
+      "available": 139
+    },
+    {
+      "mount": "/home",
+      "device": "/dev/sda2",
+      "usage": 45.8,
+      "total": 1000,
+      "used": 458,
+      "available": 542
+    },
+    {
+      "mount": "/var",
+      "device": "/dev/sda3",
+      "usage": 28.1,
+      "total": 200,
+      "used": 56,
+      "available": 144
+    }
+  ],
+  "network": {
+    "bytesIn": 2345678900,
+    "bytesOut": 987654321,
+    "packetsIn": 4567890,
+    "packetsOut": 3421098,
+    "errors": 12,
+    "dropped": 3,
+    "history": [
+      { "time": "00:00", "in": 120, "out": 85 },
+      { "time": "04:00", "in": 145, "out": 92 },
+      { "time": "08:00", "in": 230, "out": 180 },
+      { "time": "12:00", "in": 310, "out": 245 },
+      { "time": "16:00", "in": 280, "out": 210 },
+      { "time": "20:00", "in": 195, "out": 160 },
+      { "time": "23:59", "in": 165, "out": 128 }
+    ]
+  }
+}
