@@ -4,14 +4,22 @@ import { ArrowUp, ArrowDown, TrendingUp, AlertCircle } from 'lucide-react';
 
 interface MetricsCardsProps {
   metrics: {
-    cpu: { usage: number; cores: number };
-    memory: { usage: number; total: number };
-    disk: { usage: number; total: number };
+    cpu: { usage: number; cores: number; processes?: number; loadAverage?: number[] };
+    memory: { usage: number; total: number; available?: number; cached?: number; swap?: number };
+    disk: Array<{ mount: string; device: string; usage: number; total: number; used: number; available: number }>;
     network: { bytesIn: number; bytesOut: number };
   };
 }
 
 export default function MetricsCards({ metrics }: MetricsCardsProps) {
+  // Calcular promedio de uso de disco
+  const avgDiskUsage = metrics.disk.length > 0 
+    ? metrics.disk.reduce((sum, d) => sum + d.usage, 0) / metrics.disk.length 
+    : 0;
+  const totalDiskSpace = metrics.disk.length > 0
+    ? metrics.disk.reduce((sum, d) => sum + d.total, 0)
+    : 0;
+
   const cards = [
     {
       title: 'CPU',
@@ -29,10 +37,10 @@ export default function MetricsCards({ metrics }: MetricsCardsProps) {
     },
     {
       title: 'Disco',
-      value: `${metrics.disk.usage.toFixed(1)}%`,
-      subtext: `${metrics.disk.total}GB total`,
+      value: `${avgDiskUsage.toFixed(1)}%`,
+      subtext: `${totalDiskSpace}GB total`,
       icon: TrendingUp,
-      color: metrics.disk.usage > 85 ? 'red' : metrics.disk.usage > 70 ? 'yellow' : 'emerald',
+      color: avgDiskUsage > 85 ? 'red' : avgDiskUsage > 70 ? 'yellow' : 'emerald',
     },
     {
       title: 'Red',
